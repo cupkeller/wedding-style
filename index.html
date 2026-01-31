@@ -255,20 +255,3 @@ const timerInterval = setInterval(updateTimer, 1000);
 
 </html>
 
-const form = document.getElementById("rsvpForm");
-const thanks = document.getElementById("thanks");
-const backBtn = document.getElementById("backBtn");
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();           // Отменяем стандартную отправку формы
-  form.style.display = "none";  // Скрываем форму
-  thanks.style.display = "flex"; // Показываем блок "Спасибо"
-});
-
-backBtn.addEventListener("click", function() {
-  thanks.style.display = "none"; // Скрываем "Спасибо"
-  form.style.display = "flex";   // Показываем форму снова
-});
-
-
-
