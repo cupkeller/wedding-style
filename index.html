@@ -141,11 +141,9 @@ body {
 <section class="card">
   <h2>Подтвердить участие</h2>
   <form action="https://formsubmit.co/kalaytan2012@mail.ru" method="POST" class="grid">
-  <input type="hidden" name="_next" value="https://cupkeller.github.io/wedding-style/thanks.html">
-    <input type="hidden" name="_subject" value="RSVP на свадьбу Ильи и Анастасии">
+     <input type="hidden" name="_subject" value="RSVP на свадьбу Ильи и Анастасии">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="thanks.html">
-
+   <form id="rsvpForm">
     <input type="text" name="Имя и фамилия" placeholder="Имя и фамилия" required>
 
     <select name="Присутствие" required>
@@ -179,6 +177,12 @@ body {
 
     <button class="btn" type="submit">Отправить ответ</button>
   </form>
+  </section>
+  <!-- Блок "Спасибо" — изначально скрыт -->
+<section id="thanks" style="display: none;" class="thankspage">
+  <h1>Спасибо за ответ! 💖</h1>
+  <p>Мы очень рады, что вы будете с нами в этот особенный день. Ждём вас 25 июля 2026 в Тюмени!</p>
+  <button class="btn" id="backBtn">Вернуться на сайт</button>
 </section>
 
 <footer>
@@ -251,6 +255,20 @@ const timerInterval = setInterval(updateTimer, 1000);
 
 </html>
 
+const form = document.getElementById("rsvpForm");
+const thanks = document.getElementById("thanks");
+const backBtn = document.getElementById("backBtn");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();           // Отменяем стандартную отправку формы
+  form.style.display = "none";  // Скрываем форму
+  thanks.style.display = "flex"; // Показываем блок "Спасибо"
+});
+
+backBtn.addEventListener("click", function() {
+  thanks.style.display = "none"; // Скрываем "Спасибо"
+  form.style.display = "flex";   // Показываем форму снова
+});
 
 
 
