@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ильюша & Настюша — Свадьба 25.07.2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), /* затемнение для читаемости текста */
+    url("hero.jpg") center / cover no-repeat;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url("hero") center / cover no-repeat fixed;
+  color: #fff;
+  text-align: center;
+}
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    section { padding: 80px 20px; }
+    h1 { font-family: 'Pacifico', cursive; font-size: 52px; margin-bottom: 10px; }
+    h2 { font-size: 34px; margin-bottom: 20px; }
+    .card {
+      background: rgba(0,0,0,0.25);
+      border-radius: 24px;
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      backdrop-filter: blur(6px);
+    }
+    .grid { display: grid; gap: 12px; text-align: left; }
+    input, select, textarea {
+      width: 100%; padding: 14px; border-radius: 12px; border: none; font-size: 16px;
+    }
+    .btn {
+      display: inline-block; margin-top: 20px; padding: 16px 34px;
+      background: #fff; color: #ff4ecd; border-radius: 999px;
+      text-decoration: none; font-weight: 700; cursor: pointer; border: none;
+    }
+    iframe { width: 100%; height: 360px; border: 0; border-radius: 18px; }
+    footer { padding: 30px; font-size: 14px; opacity: 0.85; }
+    .note { opacity: .9; font-size: 14px; }
+    .timer { font-size: 28px; font-weight: 700; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+    .gallery img { width: 100%; border-radius: 16px; object-fit: cover; height: 120px; }
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* расстояние между блоками */
+  margin-top: 30px;
+  font-size: 36px; /* размер цифр */
+  font-weight: 700;
+  flex-wrap: wrap; /* чтобы на маленьких экранах переносилось */
+}
+
+.timer div {
+  background: rgba(255,255,255,0.25);
+  padding: 20px 28px;
+  border-radius: 16px;
+  min-width: 90px;
+  animation: pulse 2s infinite;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.timer span {
+  display: block;
+  font-size: 18px; /* подписи (Дней, Часов) */
+  font-weight: 400;
+  margin-top: 6px;
+}
+  </style>
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url("hero.jpg") center / cover no-repeat;
+}
+</head>
+<body>
+
+<section class="hero">
+  <h1>Ильюша & Настюша</h1>
+  <h2>Мы женимся!</h2>
+  <p>25 июля 2026 • Тюмень</p>
+  <div id="timer" class="timer"></div>
+</section>
+
+<section class="card">
+  <h2>Детали</h2>
+  <p><strong>Дата:</strong> 25.07.2026</p>
+  <p><strong>Место:</strong> Ресторан «Ермак»</p>
+  <p>Салаирский тракт 9 км, ст. 13 / Салаирский тракт 10 км, Ермак</p>
+  <a class="btn" target="_blank" href="https://yandex.ru/maps/?ll=65.450874,57.231527&z=16&pt=65.450874,57.231527">Построить маршрут</a>
+
+<section class="card">
+  <h2>Программа</h2>
+  <p>16:30 — Сбор гостей</p>
+  <p>17:00 — Церемония</p>
+  <p>18:00 — Банкет</p>
+  <p>23:00 — Финал банкета</p>
+  <p>23:00 — Финал вечиринки</p>
+</section>
+
+<section class="card">
+  <h2>Дресс-код</h2>
+  <p>Поддержите яркое настроение нашей свадьбы 🌈</p>
+  <p>Розовый, оранжевый, жёлтый, зелёный — можно миксовать!</p>
+</section>
+
+<section class="card">
+  <h2>Как добраться</h2>
+  <iframe src="https://yandex.ru/map-widget/v1/?ll=65.450874,57.231527&z=16&pt=65.450874,57.231527,pm2rdm"></iframe>
+</section>
+
+
+<section class="card">
+  <h2>Подтвердить участие</h2>
+  <form action="https://formsubmit.co/kalaytan2012@mail.ru" method="POST" class="grid">
+  <input type="hidden" name="_next" value="thanks.html">
+    <input type="hidden" name="_subject" value="RSVP на свадьбу Ильи и Анастасии">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://example.com/thanks.html">
+
+    <input type="text" name="Имя и фамилия" placeholder="Имя и фамилия" required>
+
+    <select name="Присутствие" required>
+      <option value="">Вы придёте?</option>
+      <option>Да, с радостью!</option>
+<option>К сожалению, не смогу</option>
+    </select>
+
+    <select name="Буду ли с парой">
+      <option value="">Вы будете с парой?</option>
+      <option>Да</option>
+      <option>Нет</option>
+    </select>
+
+<select name="Нужен трансфер">
+  <option value="">Нужен ли трансфер до места?</option>
+  <option>Да, нужен</option>
+  <option>Нет, приеду сам</option>
+</select>
+
+    <label>Алкоголь (можно выбрать несколько):</label>
+    <label><input type="checkbox" name="Алкоголь" value="Шампанское"> Шампанское</label>
+    <label><input type="checkbox" name="Алкоголь" value="Красное вино"> Красное вино</label>
+    <label><input type="checkbox" name="Алкоголь" value="Белое вино"> Белое вино</label>
+    <label><input type="checkbox" name="Алкоголь" value="Водка"> Водка</label>
+    <label><input type="checkbox" name="Алкоголь" value="Виски"> Виски</label>
+    <label><input type="checkbox" name="Алкоголь" value="Пиво"> Пиво</label>
+    <label><input type="checkbox" name="Алкоголь" value="Без алкоголя"> Не пью алкоголь</label>
+
+    <textarea name="Пожелания по еде" placeholder="Аллергии, пожелания по еде (если есть)"></textarea>
+
+    <button class="btn" type="submit">Отправить ответ</button>
+  </form>
+  <p class="note">После отправки гость увидит страницу «Спасибо» ✨</p>
+</section>
+
+<footer>
+  С любовью, Илья и Анастасия 💖
+</footer>
+
+<script>
+const weddingDate = new Date("2026-07-25T16:00:00").getTime();
+const timerEl = document.getElementById("timer");
+
+function updateTimer() {
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+
+  if (diff <= 0) {
+    timerEl.innerHTML = "<div>Сегодня свадьба! 🎉</div>";
+    clearInterval(timerInterval);
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  timerEl.innerHTML = `
+    <div>${days}<span>Дней</span></div>
+    <div>${hours}<span>Часов</span></div>
+    <div>${minutes}<span>Минут</span></div>
+    <div>${seconds}<span>Секунд</span></div>
+  `;
+}
+
+updateTimer();
+const timerInterval = setInterval(updateTimer, 1000);
+</script>
+
+<script>
+const weddingDate = new Date("2026-07-25T16:30:00").getTime();
+const timerEl = document.getElementById("timer");
+
+function updateTimer() {
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+
+  if (diff <= 0) {
+    timerEl.innerHTML = "<div>Сегодня свадьба! 🎉</div>";
+    clearInterval(timerInterval);
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  timerEl.innerHTML = `
+    <div>${days}<span>Дней</span></div>
+    <div>${hours}<span>Часов</span></div>
+    <div>${minutes}<span>Минут</span></div>
+    <div>${seconds}<span>Секунд</span></div>
+  `;
+}
+
+updateTimer();
+const timerInterval = setInterval(updateTimer, 1000);
+</script>
+
+</body>
+</html>
