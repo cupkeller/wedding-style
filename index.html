@@ -120,6 +120,14 @@ body {
   object-fit: cover;
   border-radius: 12px;
 }
+    <style>
+  .no-flowers {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+    text-align: center;
+  }
 </style>
 </head>
 <body>
@@ -173,7 +181,7 @@ body {
 
 <section class="card">
 <h2>Подтвердить участие</h2>
-
+ <p class="no-flowers">🌿 Дорогие гости, пожалуйста, не дарите нам цветы</p>
 <!-- Форма RSVP -->
     <form id="rsvpForm" action="https://formsubmit.co/kalaytan2012@mail.ru" method="POST" class="grid">
       <input type="hidden" name="_subject" value="RSVP на свадьбу Ильюши и Настюши">
@@ -280,6 +288,7 @@ const timerInterval = setInterval(updateTimer, 1000);
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
