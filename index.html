@@ -174,17 +174,18 @@ body {
 <section class="card">
 <h2>Подтвердить участие</h2>
 
-<form id="rsvpForm" class="grid">
-  <input type="hidden" name="_subject" value="RSVP на свадьбу Ильюши и Настюши">
-  <input type="hidden" name="_captcha" value="false">
+<!-- Форма RSVP -->
+    <form id="rsvpForm" class="grid" action="https://formsubmit.co/kalaytan2012@mail.ru" method="POST">
+      <input type="hidden" name="_subject" value="RSVP на свадьбу Ильюши и Настюши">
+      <input type="hidden" name="_captcha" value="false">
 
-  <input type="text" name="Имя и фамилия" placeholder="Имя и фамилия" required>
+      <input type="text" name="Имя и фамилия" placeholder="Имя и фамилия" required>
 
-    <select name="Присутствие" required>
-      <option value="">Вы придёте?</option>
-      <option>Да, с радостью!</option>
-<option>К сожалению, не смогу</option>
-    </select>
+      <select name="Присутствие" required>
+        <option value="">Вы придёте?</option>
+        <option>Да, с радостью!</option>
+        <option>К сожалению, нет</option>
+      </select>
 
     <select name="Буду ли с парой">
       <option value="">Вы будете с парой?</option>
@@ -287,6 +288,7 @@ const timerInterval = setInterval(updateTimer, 1000);
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
