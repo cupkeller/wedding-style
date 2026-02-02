@@ -5,6 +5,8 @@
   <title>Ильюша & Настюша — Свадьба 25.07.2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
   <style>
 .hero {
   min-height: 100vh;
@@ -132,13 +134,33 @@ body {
   font-weight: bold;
   font-size: 1.1em;
 }
-</style>
+  <style>
+    .hero-subtitle {
+      font-family: 'Pacifico', cursive;
+      font-size: 2em;
+      margin-top: 10px;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeUp 1.2s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
 <section class="hero">
   <h1>Ильюша & Настюша</h1>
-  <h2>Мы женимся!</h2>
+  <h2 class="hero-subtitle">Сдаёмся — будем семьёй</h2>
   <p>25 июля 2026 • Тюмень</p>
   <div id="timer" class="timer"></div>
 </section>
@@ -296,6 +318,7 @@ const timerInterval = setInterval(updateTimer, 1000);
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
